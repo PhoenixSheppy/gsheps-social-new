@@ -5,7 +5,6 @@ This is a fork of [deer-social-test](https://github.com/PhoenixSheppy/gsheps-soc
 Get the app itself:
 
 - **Web: [bsky.gsheps.social](https://bsky.gsheps.social)**
-- **Android: [GitHub Releases](https://github.com/PhoenixSheppy/gsheps-social-new/releases/latest), [Obtaininium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/PhoenixSheppy/gsheps-social-new)**
 
 ## Features Today
 
