@@ -12,8 +12,8 @@ const hues = {
   primary: BLUE_HUE,
   negative: RED_HUE,
   positive: GREEN_HUE,
-  accent: 145,
-  accentDim: 140,
+  accent: 228,
+  accentDim: 235,
 } as const
 
 const PALETTE: Palette = {
