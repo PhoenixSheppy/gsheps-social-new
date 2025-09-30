@@ -236,7 +236,7 @@ module.exports = function (_config) {
           'expo-notifications',
           {
             icon: './assets/icon-android-notification.png',
-            color: '#4b9b6c',
+            color: '#33416a',
             sounds: PLATFORM === 'ios' ? ['assets/dm.aiff'] : ['assets/dm.mp3'],
           },
         ],
@@ -284,7 +284,7 @@ module.exports = function (_config) {
               },
             },
             android: {
-              backgroundColor: '#4b9b6c',
+              backgroundColor: '#33416a',
               image: './assets/splash-android-icon.png',
               imageWidth: 150,
               dark: {
