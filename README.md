@@ -2,8 +2,6 @@
 
 This is a fork of [deer-social-test](https://github.com/PhoenixSheppy/gsheps-social-new), which is a soft fork of [deer.social](https://github.com/a-viv-a/deer-social), which is a soft fork of [social app](https://github.com/bluesky-social/social-app).
 
-Sorry for the branding being mostly unchanged, I'm not good at coming up with names.
-
 Get the app itself:
 
 - **Web: [bsky.gsheps.social](https://bsky.gsheps.social)**
