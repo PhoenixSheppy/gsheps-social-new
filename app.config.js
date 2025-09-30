@@ -35,8 +35,8 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'gsheps',
-      slug: 'gsheps',
+      name: 'gsheps.social',
+      slug: 'gsheps.social',
       scheme: ['bluesky', 'gsheps'],
       // owner: 'blueskysocial',
       // owner: 'neema.brown',
