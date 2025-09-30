@@ -1,7 +1,7 @@
-appId: top.aylac.deer
+appId: bsky.gsheps.social
 ---
 - launchApp:
-   appId: "top.aylac.deer"
+   appId: "bsky.gsheps.social"
    clearState: true
 - waitForAnimationToEnd
 - tapOn: "http://localhost:8081"

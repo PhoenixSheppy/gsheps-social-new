@@ -1,7 +1,7 @@
 
 # flow.yaml
 
-appId: top.aylac.deer
+appId: bsky.gsheps.social
 ---
 - launchApp
 # Login

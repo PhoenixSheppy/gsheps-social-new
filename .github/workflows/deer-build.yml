@@ -1,9 +1,9 @@
-name: Build deer
+name: Build gsheps
 on: workflow_dispatch
 
 jobs:
-  deer-build-android:
-    name: Build deer for Android
+  gsheps-build-android:
+    name: Build gsheps for Android
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

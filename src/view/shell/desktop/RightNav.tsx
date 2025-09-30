@@ -110,13 +110,13 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
           </>
         )}
         <InlineLinkText
-          to="https://deer-social-ayla.pages.dev/about/privacy"
+          to="https://bsky.gsheps.social/about/privacy"
           label={_(msg`Privacy`)}>
           {_(msg`Privacy`)}
         </InlineLinkText>
         {' • '}
         <InlineLinkText
-          to="https://deer-social-ayla.pages.dev/about/tos"
+          to="https://bsky.gsheps.social/about/tos"
           label={_(msg`Terms`)}>
           {_(msg`Terms`)}
         </InlineLinkText>

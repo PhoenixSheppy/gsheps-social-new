@@ -1,9 +1,9 @@
-name: Release deer
+name: Release gsheps
 on: workflow_dispatch # could be weekly/etc or on a separate branch.
 
 jobs:
   build-android:
-    name: Build deer for Android
+    name: Build gsheps for Android
     runs-on: ubuntu-latest
     outputs:
       apk-path: ${{ steps.upload-artifact.outputs.artifact-path }}
@@ -57,8 +57,8 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # v1, pinned commit hash
         with:
-          name: deer v${{ github.run_number }}
-          tag_name: deer-v${{ github.run_number }}
+          name: gsheps v${{ github.run_number }}
+          tag_name: gsheps-v${{ github.run_number }}
           prerelease: true
           fail_on_unmatched_files: true
           files: |

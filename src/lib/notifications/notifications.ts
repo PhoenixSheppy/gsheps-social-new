@@ -36,7 +36,7 @@ async function _registerPushToken({
         : PUBLIC_APPVIEW_DID,
       platform: Platform.OS,
       token: token.data,
-      appId: 'top.aylac.deer',
+      appId: 'bsky.gsheps.social',
       ageRestricted: false,
     }
 

@@ -49,7 +49,7 @@ export const SplashScreen = ({
                 a.text_center,
               ]}>
               <Trans>
-                Just to make it clear that this isn't actually deer.social
+                Just to make it clear that this isn't actually gsheps.social
               </Trans>
             </Text>
           </View>

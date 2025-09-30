@@ -18,8 +18,8 @@ module.exports = function (_config) {
   const IS_DEV = !IS_TESTFLIGHT || !IS_PRODUCTION
 
   const ASSOCIATED_DOMAINS = [
-    'applinks:deer-social-ayla.pages.dev',
-    'applinks:deer.aylac.top',
+    'applinks:bsky.gsheps.social',
+    'applinks:gsheps.social',
     // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
@@ -35,9 +35,9 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Deer',
-      slug: 'deer',
-      scheme: ['bluesky', 'deer'],
+      name: 'gsheps',
+      slug: 'gsheps',
+      scheme: ['bluesky', 'gsheps'],
       // owner: 'blueskysocial',
       // owner: 'neema.brown',
       runtimeVersion: {
@@ -45,11 +45,11 @@ module.exports = function (_config) {
       },
       icon: './assets/app-icons/ios_icon_default_light.png',
       userInterfaceStyle: 'automatic',
-      primaryColor: '#4b9b6c',
+      primaryColor: '#33416a',
       newArchEnabled: false,
       ios: {
         supportsTablet: false,
-        bundleIdentifier: 'top.aylac.deer',
+        bundleIdentifier: 'bsky.gsheps.social',
         config: {
           usesNonExemptEncryption: false,
         },
@@ -63,7 +63,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'Deer',
+          CFBundleSpokenName: 'gsheps',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -112,7 +112,7 @@ module.exports = function (_config) {
         entitlements: {
           'com.apple.developer.kernel.increased-memory-limit': true,
           'com.apple.developer.kernel.extended-virtual-addressing': true,
-          'com.apple.security.application-groups': 'group.top.aylac.deer',
+          'com.apple.security.application-groups': 'group.bsky.gsheps.social',
         },
         privacyManifests: {
           NSPrivacyAccessedAPITypes: [
@@ -151,9 +151,9 @@ module.exports = function (_config) {
           foregroundImage: './assets/icon-android-foreground.png',
           monochromeImage: './assets/icon-android-foreground.png',
           backgroundImage: './assets/icon-android-background.png',
-          backgroundColor: '#4b9b6c',
+          backgroundColor: '#33416a',
         },
-        package: 'top.aylac.deer',
+        package: 'bsky.gsheps.social',
         intentFilters: [
           {
             action: 'VIEW',
@@ -161,15 +161,7 @@ module.exports = function (_config) {
             data: [
               {
                 scheme: 'https',
-                host: 'deer-social-ayla.pages.dev',
-              },
-              {
-                scheme: 'https',
-                host: 'deer.aylac.top',
-              },
-              {
-                scheme: 'https',
-                host: 'deer.social',
+                host: 'bsky.gsheps.social',
               },
               {
                 scheme: 'https',

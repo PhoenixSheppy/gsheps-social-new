@@ -1,4 +1,4 @@
-appId: top.aylac.deer
+appId: bsky.gsheps.social
 ---
 - runScript:
     file: ../../setupServer.js

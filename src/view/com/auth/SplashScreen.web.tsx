@@ -101,7 +101,7 @@ export const SplashScreen = ({
                   t.atoms.text_contrast_medium,
                 ]}>
                 <Trans>
-                  Just to make it clear that this isn't actually deer.social
+                  Just to make it clear that this isn't actually gsheps.social
                 </Trans>
               </Text>
             </View>
@@ -172,7 +172,7 @@ function Footer() {
       ]}>
       <InlineLinkText
         label={_(msg`Read the patches and contribute`)}
-        to="https://github.com/danielah05/deer-social">
+        to="https://github.com/PhoenixSheppy/gsheps-social-new">
         <Trans>Github</Trans>
       </InlineLinkText>
 

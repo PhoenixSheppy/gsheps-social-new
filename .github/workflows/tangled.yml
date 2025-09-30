@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: gwennlbh/to-tangled@v0.3
         with:
-          repo: aylac.top/deer-social-test
+          repo: aylac.top/gsheps-social-test
           ssh-key: ${{ secrets.TANGLED_KEY }}
