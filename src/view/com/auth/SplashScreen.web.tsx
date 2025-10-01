@@ -100,9 +100,7 @@ export const SplashScreen = ({
                   a.font_semi_bold,
                   t.atoms.text_contrast_medium,
                 ]}>
-                <Trans>
-                  Just to make it clear that this isn't actually gsheps.social
-                </Trans>
+                <Trans>Woof Woof! Grr, Bark! Actually Sir, I'm a Puppy.</Trans>
               </Text>
             </View>
 
