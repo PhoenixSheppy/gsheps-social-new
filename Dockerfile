@@ -57,11 +57,9 @@ RUN \. "$NVM_DIR/nvm.sh" && \
   echo "EXPO_PUBLIC_RELEASE_VERSION=$EXPO_PUBLIC_RELEASE_VERSION" >> .env && \
   echo "EXPO_PUBLIC_BUNDLE_IDENTIFIER=$EXPO_PUBLIC_BUNDLE_IDENTIFIER" >> .env && \
   echo "EXPO_PUBLIC_BUNDLE_DATE=$(date -u +"%y%m%d%H")" >> .env && \
-  rm -rf /usr/local/share/.cache/yarn && \
   npm install --global yarn && \
-  yarn config set network-timeout 600000 && \
-  yarn config set cache-folder /tmp/yarn-cache && \
-  yarn install --frozen-lockfile && \
+  yarn cache clean && \
+  yarn install --frozen-lockfile --network-timeout 300000 && \
   yarn intl:build 2>&1 | tee i18n.log && \
   if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi
 
