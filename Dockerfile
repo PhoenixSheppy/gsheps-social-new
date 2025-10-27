@@ -60,7 +60,7 @@ RUN \. "$NVM_DIR/nvm.sh" && \
   npm config set fetch-timeout 600000 && \
   npm config set fetch-retry-mintimeout 20000 && \
   npm config set fetch-retry-maxtimeout 120000 && \
-  npm install --legacy-peer-deps && \
+  npm install && \
   npm run intl:build 2>&1 | tee i18n.log && \
   if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi
 
