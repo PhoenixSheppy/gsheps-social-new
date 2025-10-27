@@ -60,9 +60,8 @@ RUN \. "$NVM_DIR/nvm.sh" && \
   npm install --global yarn && \
   yarn && \
   yarn intl:build 2>&1 | tee i18n.log && \
-  if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi
-
-RUN \. "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && yarn build-web
+  if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi && \
+  yarn build-web
 
 # DEBUG
 RUN find ./bskyweb/static && find ./web-build/static
