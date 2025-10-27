@@ -61,7 +61,7 @@ RUN \. "$NVM_DIR/nvm.sh" && \
   npm install --global yarn && \
   yarn config set cache-folder /tmp/yarn-cache-$(date +%s) && \
   yarn config set network-timeout 600000 && \
-  yarn install --frozen-lockfile --verbose && \
+  yarn install && \
   yarn intl:build 2>&1 | tee i18n.log && \
   if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi
 
