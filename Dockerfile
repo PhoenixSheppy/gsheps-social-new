@@ -57,14 +57,12 @@ RUN \. "$NVM_DIR/nvm.sh" && \
   echo "EXPO_PUBLIC_RELEASE_VERSION=$EXPO_PUBLIC_RELEASE_VERSION" >> .env && \
   echo "EXPO_PUBLIC_BUNDLE_IDENTIFIER=$EXPO_PUBLIC_BUNDLE_IDENTIFIER" >> .env && \
   echo "EXPO_PUBLIC_BUNDLE_DATE=$(date -u +"%y%m%d%H")" >> .env && \
-  npm config set fetch-timeout 600000 && \
-  npm config set fetch-retry-mintimeout 20000 && \
-  npm config set fetch-retry-maxtimeout 120000 && \
-  npm install --legacy-peer-deps && \
-  npm run intl:build 2>&1 | tee i18n.log && \
+  npm install --global yarn && \
+  yarn install --no-cache --network-timeout 600000 && \
+  yarn intl:build 2>&1 | tee i18n.log && \
   if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi
 
-RUN \. "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && npm run build-web
+RUN \. "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && yarn build-web
 
 # DEBUG
 RUN find ./bskyweb/static && find ./web-build/static
